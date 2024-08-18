@@ -19,7 +19,7 @@ There was a faulty php extension file that caused the servor error
 
 
 
-![Component Image](images\comp.jpeg)
+![Component Image](images/comp.jpeg)
 
 **Timeline**
 The Issue was detected at 1403hrs EAT.
@@ -56,10 +56,14 @@ The issue was resolved by fixing the typographical faulty line on the php extens
 start a tmux session on a window
 
 start another tmux session on another window 
-curl on window one
+
+Use curl on window one
+
 used strace on window 2
-strace required as to kknow PID of Apache process as we needed to run strace attached to the Apache PID.
+strace required us to know the PID of Apache process as we needed to run strace attached to the Apache PID.
+
 Ran strace on window 2 with apache PIDs.
+
 curl commands on window 1 (Curl -sI 127.0.0.1) gaves us an error message on window 1.
   <error message
   No directory error
@@ -71,7 +75,7 @@ Closed tmux session (tmux kill-session)
 to such for occurance of an intance of .phpp.we used the command "grep -ro "phpp" /var/www/html
 this displayed all files that has phpp inside.
 
-We checked them visually to know how to write them wright
+We checked them visually to know how to write them right
 vi /var/www/html/wp-includes/js/zxcvbn.min.js:phpp
 this gives a compressed file
 vi /var/www/html/wp-settings.php
