@@ -1,4 +1,4 @@
-**INCIDENT POSTMORTEM ON APACHE INTERNAL SERVOR ERROR**
+**INCIDENT POSTMORTEM ON APACHE INTERNAL SERVER ERROR**
 
 **Issue Summary**
 
@@ -23,6 +23,7 @@ There was a faulty php extension file that caused the servor error
 The Issue was detected at 1403hrs EAT.
 
 The Issue was detected by Datadog monitoring system by dispalaying an alert message and displaying the error on the dashboard.
+
 We configured Apache for status monitoring by Datadog. Apache was configured to expose the server status by adding the following lines to Apacge Configuartion
      <Location "/server-status">
          SetHandler server-status
@@ -51,7 +52,7 @@ The issue was resolved by fixing the typographical faulty line on the php extens
 
 **Corrective and preventive measures taken**
 
-![Component Image](images/comp.jpeg)
+![Component Image](images/comp2.jpeg)
 
 start a tmux session on a window
 
