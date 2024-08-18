@@ -6,11 +6,15 @@
 The outage lasted for almost an hour starting at 2.00pm and ending at 2.45pm (EAT)
 
 **Impact of the Outage**
+
 **Status Code 500
+
 The Apache Server returned a 500 error (server error)
 Users were not able to access the requested resource or page, leading to frustration.
 
 **Root Cause**
+
+
 There was a faulty php extension file that caused the servor error
 
 
@@ -33,17 +37,24 @@ Immediately the outage was detected, the ALX team took corrective measures by fi
 **Debugging Steps taken**
 
 We used tmux in debugging.
-tmux (Terminal Multiplexer) is a powerful tool used in debugging and development that allows users to manage multiple terminal sessions from a single window.Started two tmux sessions on two windows. Ran curl commands on window 1 and ran strace on window 2. 
+
+tmux (Terminal Multiplexer) is a powerful tool used in debugging and development that allows users to manage multiple terminal sessions from a single window.
+
+Started two tmux sessions on two windows. Ran curl commands on window 1 and ran strace on window 2. 
 tmux was an essential tool in the debugging process as it allows you to split your terminal into multiple panes, enabling you to run different commands or scripts simultaneously. This is useful for monitoring logs in one pane while executing commands in another.
+
 **What was causing the isssue**
+
 The issue was caused by a typographical error in a php extension file that caused the server Apache server to return a 500 internal server error
 
 **How the Incident wa resolved**
+
 The issue was resolved by fixing the typographical faulty line on the php extension file.
 
 **Corrective and preventive measures taken**
 
 start a tmux session on a window
+
 start another tmux session on another window 
 curl on window one
 used strace on window 2
@@ -65,6 +76,7 @@ vi /var/www/html/wp-includes/js/zxcvbn.min.js:phpp
 this gives a compressed file
 vi /var/www/html/wp-settings.php
 gave us the content of the php file use the command grep -n "php" /var/www/html/wp-settings.php to find the line having the typographical error 
+
 we then wrote a puppet file to fix the php extension resolving the servor error.
 
 
