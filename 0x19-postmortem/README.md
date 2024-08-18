@@ -1,6 +1,8 @@
 **INCIDENT POSTMORTEM ON APACHE INTERNAL SERVOR ERROR**
 
 **Issue Summary**
+
+
 The outage lasted for almost an hour starting at 2.00pm and ending at 2.45pm (EAT)
 
 **Impact of the Outage**
