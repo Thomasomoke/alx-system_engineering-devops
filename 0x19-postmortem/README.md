@@ -13,13 +13,11 @@ The Apache Server returned a 500 error (server error)
 Users were not able to access the requested resource or page, leading to frustration.
 
 **Root Cause**
+![Component Image](images/comp.jpeg)
 
 
 There was a faulty php extension file that caused the servor error
 
-
-
-![Component Image](images/comp.jpeg)
 
 **Timeline**
 The Issue was detected at 1403hrs EAT.
@@ -52,6 +50,8 @@ The issue was caused by a typographical error in a php extension file that cause
 The issue was resolved by fixing the typographical faulty line on the php extension file.
 
 **Corrective and preventive measures taken**
+
+![Component Image](images/comp.jpeg)
 
 start a tmux session on a window
 
