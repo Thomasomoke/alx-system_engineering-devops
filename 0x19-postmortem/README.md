@@ -4,14 +4,16 @@
 The outage lasted for almost an hour starting at 2.00pm and ending at 2.45pm (EAT)
 
 **Impact of the Outage**
-**Status Code 500**
+**Status Code 500
 The Apache Server returned a 500 error (server error)
 Users were not able to access the requested resource or page, leading to frustration.
 
 **Root Cause**
 There was a faulty php extension file that caused the servor error
 
-![Component Image](0x19-postmortem/comp.jpeg)
+
+
+![Component Image](images\comp.jpeg)
 
 **Timeline**
 The Issue was detected at 1403hrs EAT.
